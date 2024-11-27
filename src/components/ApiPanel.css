@@ -1,0 +1,14 @@
+.api-panel {
+    margin-left: 10%;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.swagger-ui-container {
+overflow-x: auto;
+}
+
+.swagger-ui .topbar {
+display: none;
+}

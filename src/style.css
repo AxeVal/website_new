@@ -1,0 +1,75 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    height: 100vh;
+    background-color: #c1d6fa;
+}
+
+.sidebar {
+    width: 10%;
+    background-color: #49098f;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #a900b2;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.1s, border-radius 0.1s, color 0.1s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #74d9f6; /* при наведении */
+    border-radius: 0%;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar ul li.highlight.active a {
+    background-color: #402dec;
+    color: white;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #007bb2;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.15s, border-radius 0.15s, color 0.15s;
+}
+
+.content {
+    text-align: left;
+    margin-left: 15%;
+    padding: 25px;
+    width: 80%;
+    /* box-sizing: border-box; */
+}
+
+/* .conc {
+    margin-inline-start: 100px;
+} */

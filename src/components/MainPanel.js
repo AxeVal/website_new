@@ -1,33 +1,49 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-function MainPanel(){
-    return(
-        <div class="main">
-            <div class="panels">
-                <div class="panel" id="test">
-                    <Link to="/MainPanel" className="button-link">
-                        Test your knowlage
-                    </Link>
-                </div>
+const MainPanel = () => {
+    return (
+        <div>
+            <h1>Обучение с помощью языковых моделей</h1>
 
-                <div class="panel" id="train">
-                    <Link to="/ContentPanel" className="button-link">
-                        Become clever
-                    </Link>
-                </div>
-            </div>
+            <h3>"Обратимся к старшим"</h3>
 
-            <div class="name">
-                <h2>Ресурс для изучения английского языка с подбором заданий при помощи нейронной сети</h2>
-                <h3>В последние годы нейронные сети стали важным инструментом в области обучения языкам. Эти технологии, вдохновленные работой человеческого мозга, позволяют создавать адаптивные и персонализируемые методы обучения, которые могут значительно улучшить процесс изучения английского языка.
-                </h3>
-            </div>
+            <h4>GPT-4 (Generative Pre-trained Transformer 4)</h4>
+            <p> 
+                  —  большая модель даже в рамках LLM - GPT-4 имеет 1.76 триллиона параметров. 
+                Она способна понимать множество языков и генерировать тесты по запросу.
+                Отличительной чертой моего проекта является более узкая направленность и гибкость - 
+                вся система может быть воспроизведена на обычном компьютере либо на слабом сервере.
+            </p>
 
-            <br></br>
+            <img src={`${process.env.PUBLIC_URL}/GPT-4.jpeg`} alt="GPT-4" width="50%" />
+
+            <p>
+                Принцип работы языковых моделей разнообразен, но главная их черта - 
+                предсказывать следующее слово, основываясь на контексте.
+            </p>
             
-            <img class="books" src="self-study.png" alt="english books" width="600px" height="400px"></img>
+            <p><a href="https://ru.wikipedia.org/wiki/GPT-4" target="_blank">Подробнее о GPT-4 в wikipedia</a> <span style={{ color: 'red' }}></span></p>
+
+            <h4>OpenAI</h4>
+            <p>
+                OpenAI — компания, разработавшая GPT. Впервые я услышал о ней, когда они разработали искусственный интелект для игры DOTA2. 
+                В 2018 году искуственный интелект одолел команду людей со счетом 2-0, что стало большой новостью в сообществе и за его границами.
+                С тех пор компания занимается нейронными сетями, а главным их продуктом стала всеми известная GPT.
+            </p>
+            <img src="dota2.jpg" alt="dota2" width="50%" />
+
+            <p>Развитие GPT</p>
+            <ul className="GPT-growing">
+                <li>GPT-2 - 1.5 млрд параметров</li>
+                <li>GPT-3 - 175 млрд параметров</li>
+                <li>GPT-4 - 1.76 трлн параметров (1760 млрд)</li>
+            </ul>
+
+            <p>
+                <a href="https://openai.com/" target="_blank">Сайт разработчиков GPT - OpenAI</a>
+            </p>
         </div>
-    )
-}
+    );
+};
 
 export default MainPanel;
